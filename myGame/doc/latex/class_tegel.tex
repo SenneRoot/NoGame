@@ -1,0 +1,133 @@
+\hypertarget{class_tegel}{}\section{Tegel Class Reference}
+\label{class_tegel}\index{Tegel@{Tegel}}
+Inheritance diagram for Tegel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tegel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tegel_a269c76f2f28b725bc720ee98b192371f}{Tegel} (int x, int y)
+\item 
+abstract int \hyperlink{class_tegel_a1a7dda59e0cd949366ca53890963a555}{get\+Positie} ()
+\item 
+abstract void \hyperlink{class_tegel_abc7f5173d69e3737da3496def320a2ec}{update} (\hyperlink{classkey_manager}{key\+Manager} \hyperlink{classkey_manager}{key\+Manager})
+\item 
+abstract void \hyperlink{class_tegel_a23f87e96ef260e41b2f16b8838c8fdac}{render} (Graphics g, Buffer\+Strategy bs)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_locatie}{Locatie} \hyperlink{class_tegel_a2a70fa00c15beb627f6f34ea8436d3df}{positie}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Kelvin 
+
+Senne 
+
+Corné 
+
+Jordy 
+
+Aran
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 03/6/2017 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+This abstract class creates the tiles, these tiles can be\+: player, goal, empty or a wall. Moreover, \hyperlink{class_tegel}{Tegel} is used by \hyperlink{class_speelveld}{Speelveld} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tegel_a269c76f2f28b725bc720ee98b192371f}\label{class_tegel_a269c76f2f28b725bc720ee98b192371f}} 
+\index{Tegel@{Tegel}!Tegel@{Tegel}}
+\index{Tegel@{Tegel}!Tegel@{Tegel}}
+\subsubsection{\texorpdfstring{Tegel()}{Tegel()}}
+{\footnotesize\ttfamily Tegel.\+Tegel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+A constructor. The constructor inits the place from the tiles. These tiles can be the following objects\+: player, goal, empty or a wall. 
+\begin{DoxyParams}{Parameters}
+{\em x} & ; Used for the horizontal position \\
+\hline
+{\em y} & ; Used for the vertical position \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_speler}{Speler} 
+
+\hyperlink{class_doel}{Doel} 
+
+\hyperlink{class_muur}{Muur} 
+
+\hyperlink{class_leeg}{Leeg} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tegel_a1a7dda59e0cd949366ca53890963a555}\label{class_tegel_a1a7dda59e0cd949366ca53890963a555}} 
+\index{Tegel@{Tegel}!get\+Positie@{get\+Positie}}
+\index{get\+Positie@{get\+Positie}!Tegel@{Tegel}}
+\subsubsection{\texorpdfstring{get\+Positie()}{getPositie()}}
+{\footnotesize\ttfamily abstract int Tegel.\+get\+Positie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+This method is abstract. ~\newline
+ for more detailed description\+: ~\newline
+ \begin{DoxySeeAlso}{See also}
+\hyperlink{class_speler}{Speler} 
+
+\hyperlink{class_doel}{Doel} 
+
+\hyperlink{class_muur}{Muur} 
+
+\hyperlink{class_leeg}{Leeg} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_tegel_a23f87e96ef260e41b2f16b8838c8fdac}\label{class_tegel_a23f87e96ef260e41b2f16b8838c8fdac}} 
+\index{Tegel@{Tegel}!render@{render}}
+\index{render@{render}!Tegel@{Tegel}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily abstract void Tegel.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g,  }\item[{Buffer\+Strategy}]{bs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+This method is abstract for more detailed description \begin{DoxySeeAlso}{See also}
+\hyperlink{class_speler}{Speler} 
+
+\hyperlink{class_doel}{Doel} 
+
+\hyperlink{class_muur}{Muur} 
+
+\hyperlink{class_leeg}{Leeg} for more detailed description 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_tegel_abc7f5173d69e3737da3496def320a2ec}\label{class_tegel_abc7f5173d69e3737da3496def320a2ec}} 
+\index{Tegel@{Tegel}!update@{update}}
+\index{update@{update}!Tegel@{Tegel}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily abstract void Tegel.\+update (\begin{DoxyParamCaption}\item[{\hyperlink{classkey_manager}{key\+Manager}}]{key\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+This method is abstract for more detailed description \begin{DoxySeeAlso}{See also}
+\hyperlink{class_speler}{Speler} 
+
+\hyperlink{class_doel}{Doel} 
+
+\hyperlink{class_muur}{Muur} 
+
+\hyperlink{class_leeg}{Leeg} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_tegel_a2a70fa00c15beb627f6f34ea8436d3df}\label{class_tegel_a2a70fa00c15beb627f6f34ea8436d3df}} 
+\index{Tegel@{Tegel}!positie@{positie}}
+\index{positie@{positie}!Tegel@{Tegel}}
+\subsubsection{\texorpdfstring{positie}{positie}}
+{\footnotesize\ttfamily \hyperlink{class_locatie}{Locatie} Tegel.\+positie\hspace{0.3cm}{\ttfamily [protected]}}
+
+positie is used for location 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/users/senne/workspace/\+No\+Game/src/Tegel.\+java\end{DoxyCompactItemize}

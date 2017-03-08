@@ -1,0 +1,120 @@
+\hypertarget{class_speler}{}\section{Speler Class Reference}
+\label{class_speler}\index{Speler@{Speler}}
+Inheritance diagram for Speler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_speler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_speler_af23b7a6a0b542e5a2a2f51be5d6bb043}{Speler} (int x, int y)
+\item 
+int \hyperlink{class_speler_abd8d3818f18cb18395b34484a4281ddf}{get\+Positie} ()
+\item 
+void \hyperlink{class_speler_a035f2db6c9ab98ee10e09f82576a5a2c}{update} (\hyperlink{classkey_manager}{key\+Manager} \hyperlink{classkey_manager}{key\+Manager})
+\item 
+void \hyperlink{class_speler_a93720a1aa0fe2bfee93c16aaf670894d}{render} (Graphics g, Buffer\+Strategy bs)
+\item 
+\hyperlink{enum_richting}{Richting} \hyperlink{class_speler_a35bd3987229c02b587c3dc53e90f97c0}{get\+Richting} (\hyperlink{classkey_manager}{key\+Manager} \hyperlink{classkey_manager}{key\+Manager})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Kelvin 
+
+Senne 
+
+Corné 
+
+Jordy 
+
+Aran
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 03/6/2017 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+1.\+0
+\end{DoxySince}
+This class creates the player 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_speler_af23b7a6a0b542e5a2a2f51be5d6bb043}\label{class_speler_af23b7a6a0b542e5a2a2f51be5d6bb043}} 
+\index{Speler@{Speler}!Speler@{Speler}}
+\index{Speler@{Speler}!Speler@{Speler}}
+\subsubsection{\texorpdfstring{Speler()}{Speler()}}
+{\footnotesize\ttfamily Speler.\+Speler (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Constructor takes the x and y, and give this to \hyperlink{class_tegel}{Tegel} constructor with \char`\"{}super()\char`\"{} 
+\begin{DoxyParams}{Parameters}
+{\em x} & ; Used for the horizontal position \\
+\hline
+{\em y} & ; Used for the vertical position \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_tegel}{Tegel} Constructor 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_speler_abd8d3818f18cb18395b34484a4281ddf}\label{class_speler_abd8d3818f18cb18395b34484a4281ddf}} 
+\index{Speler@{Speler}!get\+Positie@{get\+Positie}}
+\index{get\+Positie@{get\+Positie}!Speler@{Speler}}
+\subsubsection{\texorpdfstring{get\+Positie()}{getPositie()}}
+{\footnotesize\ttfamily int Speler.\+get\+Positie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method does nothing \mbox{\Hypertarget{class_speler_a35bd3987229c02b587c3dc53e90f97c0}\label{class_speler_a35bd3987229c02b587c3dc53e90f97c0}} 
+\index{Speler@{Speler}!get\+Richting@{get\+Richting}}
+\index{get\+Richting@{get\+Richting}!Speler@{Speler}}
+\subsubsection{\texorpdfstring{get\+Richting()}{getRichting()}}
+{\footnotesize\ttfamily \hyperlink{enum_richting}{Richting} Speler.\+get\+Richting (\begin{DoxyParamCaption}\item[{\hyperlink{classkey_manager}{key\+Manager}}]{key\+Manager }\end{DoxyParamCaption})}
+
+This class renders the player. 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classkey_manager}{key\+Manager}} & ; Listen to key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{enum_richting}{Richting} ; can be N\+O\+R\+TH, W\+E\+ST, E\+A\+ST or S\+O\+U\+TH
+\end{DoxyReturn}
+This method is used to check the neighbourfield in \hyperlink{class_speelveld}{Speelveld}. \mbox{\Hypertarget{class_speler_a93720a1aa0fe2bfee93c16aaf670894d}\label{class_speler_a93720a1aa0fe2bfee93c16aaf670894d}} 
+\index{Speler@{Speler}!render@{render}}
+\index{render@{render}!Speler@{Speler}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Speler.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g,  }\item[{Buffer\+Strategy}]{bs }\end{DoxyParamCaption})}
+
+This method renders the player. 
+\begin{DoxyParams}{Parameters}
+{\em g} & ; Used for the Graphics \\
+\hline
+{\em bs;} & Used for the bufferstrategy\\
+\hline
+\end{DoxyParams}
+It uses the \hyperlink{class_assets}{Assets} class and the positions to draw himself. This method is used by the 2d array from tiles in \hyperlink{class_speelveld}{Speelveld}. \mbox{\Hypertarget{class_speler_a035f2db6c9ab98ee10e09f82576a5a2c}\label{class_speler_a035f2db6c9ab98ee10e09f82576a5a2c}} 
+\index{Speler@{Speler}!update@{update}}
+\index{update@{update}!Speler@{Speler}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Speler.\+update (\begin{DoxyParamCaption}\item[{\hyperlink{classkey_manager}{key\+Manager}}]{key\+Manager }\end{DoxyParamCaption})}
+
+This method updates the position of the player when a key is pressed 
+\begin{DoxyParams}{Parameters}
+{\em key\+Manger} & ; Listen to key\\
+\hline
+\end{DoxyParams}
+If key\+Manger is true, position can be changed, otherwise it will move on an on. Then it will check which key was pressed. It uses Set\+XY from the positie class, this one takes the direction from the enum \hyperlink{enum_richting}{Richting}. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_tegel_a2a70fa00c15beb627f6f34ea8436d3df}{positie} 
+
+\hyperlink{enum_richting}{Richting} 
+
+\hyperlink{classkey_manager}{key\+Manager} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/users/senne/workspace/\+No\+Game/src/Speler.\+java\end{DoxyCompactItemize}
