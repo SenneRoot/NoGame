@@ -24,27 +24,27 @@ public class Assets {
 	public static void init(int level){
 		if (level == 1)
 		{
-		muur = imageLoader.loadImage("/Plaatjes/dumpert.jpg");
-		doel = imageLoader.loadImage("/Plaatjes/vis.jpg");
-		speler = imageLoader.loadImage("/Plaatjes/speler.jpg");
+		muur = imageLoader.loadImage("/Plaatjes/dumpert.JPG");
+		doel = imageLoader.loadImage("/Plaatjes/vis.JPG");
+		speler = imageLoader.loadImage("/Plaatjes/speler.JPG");
 		biem = ("Resources/Muziekjes/BIEM.MP3");
 		start = ("Resources/Muziekjes/start.MP3");
 		eind = ("Resources/Muziekjes/doodgestoken.MP3");
 		}
 		if (level == 2)
 		{
-		muur = imageLoader.loadImage("/Plaatjes/dumpert.jpg");
-		doel = imageLoader.loadImage("/Plaatjes/kaas.jpg");
-		speler = imageLoader.loadImage("/Plaatjes/kaasmevrouw.jpg");
+		muur = imageLoader.loadImage("/Plaatjes/dumpert.JPG");
+		doel = imageLoader.loadImage("/Plaatjes/kaas.JPG");
+		speler = imageLoader.loadImage("/Plaatjes/kaasmevrouw.JPG");
 		biem = ("Resources/Muziekjes/BIEM.MP3");
 		start = ("Resources/Muziekjes/kaas.MP3");
 		eind = ("Resources/Muziekjes/kut_kaas.MP3");
 		}
 		if (level == 3)
 		{
-		muur = imageLoader.loadImage("/Plaatjes/dumpert.jpg");
-		doel = imageLoader.loadImage("/Plaatjes/dumpertreeten_ass.png");
-		speler = imageLoader.loadImage("/Plaatjes/vanleeuwen.jpg");
+		muur = imageLoader.loadImage("/Plaatjes/dumpert.JPG");
+		doel = imageLoader.loadImage("/Plaatjes/dumpertreeten_ass.PNG");
+		speler = imageLoader.loadImage("/Plaatjes/vanleeuwen.JPG");
 		biem = ("Resources/Muziekjes/BIEM.MP3");
 		start = ("Resources/Muziekjes/start.MP3");
 		eind = ("Resources/Muziekjes/dikke_billen.MP3");
